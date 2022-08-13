@@ -168,6 +168,7 @@ header div .header-image {
   margin-right: auto;
   display: flex;
   margin-top: 24px;
+  padding-left: 25px;
  }
  .blog-card {
   background-color: #FFFFFF;
