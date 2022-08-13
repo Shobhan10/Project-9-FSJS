@@ -108,13 +108,21 @@ header div .header-image {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,.04);
   color: #4617fe;
 }
+.api .cards .card-active h3 {
+    margin-top: 14px;
+}
+.api .cards .card-active p {
+    color: #000;
+    margin-top: 10px;
+    font-size: 14px;
+}
 .api .cards .card {
   padding: 40px 20px;
 }
-.api .cards [class^="card"] h3 {
+.api .cards .card h3 {
   margin-top: 14px;
 }
-.api .cards [class^="card"] p {
+.api .cards .card p {
   color: #000000;
   margin-top: 10px;
   font-size: 14px; 
