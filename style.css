@@ -58,12 +58,65 @@ header .header-text p {
 header div:last-child {
   position: absolute;
   right: 0;
-  width: 640px;
-  height: 500px;
+  width: 600px;
   top: 90px;
 }
 header div .header-image {
   width: 100%;
+}
+
+
+@media screen and (max-width: 1290px) {
+  header .header-text h2 {
+    font-size: 2rem;
+  }
+  header div:last-child {
+    width: 500px;
+    top: 170px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  header .header-text h2 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1010px) {
+  header {
+    justify-content: center; 
+    padding: 0 20px;
+  }
+  header div:last-child {
+    display: none;
+  }
+  nav {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  header div .logo {
+    order: 1;
+    margin-top: 50px;
+    width: 100px;
+    margin-right: 40px;
+  }
+  .header-text {
+    padding: 0 20px;
+  }
+  nav .nav-item-active {
+    background-color: #FFFFFF;
+    color: #4617fe;
+    padding: 5px 20px;
+    border-radius: 4px;
+    min-width: 50px;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+  }
+  
+}
+
+@media screen and (max-width: 710px) {
+  .nav-item:not(svg) {
+    display: none;
+  }
 }
 
 /*----------------------- companies --------------------*/
@@ -81,6 +134,30 @@ header div .header-image {
   font-family: "Righteous";
 }
 
+@media screen and (max-width: 1290px) {
+  .companies {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .companies .company-items {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .companies .company-items {
+    font-size: 1rem;
+  }
+ }
+@media screen and (max-width: 1010px) {
+  .companies {
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+    gap: 20px;
+  }
+
+}
+
 /*------------------- api section --------------------*/
 .api {
     max-width: 85rem;
@@ -94,6 +171,7 @@ header div .header-image {
 }
 .api .cards {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
   align-items: center;
   gap: 20px;
@@ -148,7 +226,22 @@ header div .header-image {
   cursor: pointer;
  }
 
+ @media screen and (max-width: 1290px) {
+   .card:last-child::after {
+     display: none;
+   }
+ }
 
+ @media screen and (max-width: 1010px) {
+  .api {
+    padding: 0 20px;
+    margin-top: 5em;
+  }
+  .api .api-heading {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
 
  /*----------------------- Blog section -----------------------*/
 
@@ -167,6 +260,7 @@ header div .header-image {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 24px;
   padding-left: 25px;
  }
@@ -227,6 +321,46 @@ header div .header-image {
   font-weight: 900;
  }
 
+ @media screen and (max-width: 1260px) {
+  .blog-cards {
+    gap: 40px;
+  }
+  .blog-card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .blog-image {
+    width: 100px;
+   }
+   .blog-image img {
+    width: 100%;
+   }
+   .blog-content {
+    padding: 10px 30px 20px 30px;
+   }
+   .blog-bottom {
+    left: 0px;
+    bottom: -20px;
+  }
+  div.blog-author {
+    left: 0;
+    bottom: -40px;
+   }
+   .blog-heading {
+    padding: 0 20px;
+   }
+   .blog-heading h1 {
+      font-size: 2.2rem;
+   }
+ }
+
+ @media screen and (max-width: 1010px) {
+   .blog-heading h1 {
+      font-size: 2.2rem;
+      text-align: center;
+   }
+}
+
  
  /*------------------- Faq section -------------------*/
  .faq-section {
@@ -266,11 +400,36 @@ header div .header-image {
     border-radius: 4px;
  }
 
+  @media screen and (max-width: 1270px) {
+  .faq-section .faq-content {
+    z-index: 2;
+  }
+  .faq-section .faq-image {
+    opacity: .1;
+    z-index: 1;
+  }
+ }
+
+ @media screen and (max-width: 600px) {
+  .faq-section .faq-content h2 {
+    font-size: 2rem;
+    line-height: 40px;
+   }
+   .faq-section .faq-content h4 {
+    font-size: 12px;
+    padding-top: 15px;
+   }
+   .faq-section .faq-content h2 ~ h4:not(:first-of-type) {
+    font-size: 1rem;
+    padding-top: 34px;
+   }
+ }
 
 /*-------------------- Download section --------------------*/
 
 .download-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 90px;
   height: 300px;
@@ -307,6 +466,31 @@ header div .header-image {
   border-radius: 50px;
 }
 
+@media screen and (max-width: 1047px) {
+  .download-section {
+    padding: 0 10px;
+  }
+  .download-section .download-email {
+    position: relative;
+  }
+  .download-section .download-email form input {
+    padding: 15px 10px 15px 25px;
+  }
+  .download-section .download-email form button {
+    padding: 10px 20px;
+    position: relative;
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .download-section .download-email form button {
+    padding: 10px 20px;
+    position: relative;
+    right: -280px;
+    bottom: 45px;
+  }
+}
 
 /*------------------- footer section ----------------------*/
 
@@ -317,6 +501,7 @@ header div .header-image {
   padding: 20px 90px;
   align-items: center;
   height: 200px;
+  flex-wrap: wrap;
 }
 
 .footer-section .footer-left .list {
@@ -361,4 +546,23 @@ header div .header-image {
   margin-left: 20px;
   display: inline-block;
   background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-section {
+    padding: 25px;
+    gap: 40px;
+  }
+  .footer-section .footer-left .list {
+    gap: 25px;
+  }
+  .footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after {
+    margin-left: 15px;
+  }
+  .footer-right:first-child {
+    text-align: left;
+  }
+  .footer-right .logos-list {
+    padding-left: 0px;
+  }
 }
