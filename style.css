@@ -555,10 +555,10 @@ header div .header-image {
     gap: 40px;
   }
   .footer-section .footer-left .list {
-    gap: 25px;
+    gap: 10px;
   }
   .footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after {
-    margin-left: 12px;
+    margin-left: 6px;
   }
   .footer-right:first-child {
     text-align: left;
