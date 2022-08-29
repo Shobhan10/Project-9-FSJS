@@ -10,6 +10,10 @@ Hi 👋 I am Shobhan Sundar Goutam. This project is made with the help of `HTML`
 
 ![Project-9 Screenshot](./project-9.jpeg)
 
+### Mobile Layout :
+
+![Project-9 Mobile Screenshot](./project-9-mobile.jpg)
+
 - ### Learnings from this project:-
 
   - Learned to use `::placeholder` selector in css.
