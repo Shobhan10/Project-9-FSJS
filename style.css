@@ -558,7 +558,7 @@ header div .header-image {
     gap: 25px;
   }
   .footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after {
-    margin-left: 15px;
+    margin-left: 12px;
   }
   .footer-right:first-child {
     text-align: left;
