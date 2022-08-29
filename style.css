@@ -570,9 +570,9 @@ header div .header-image {
 
 @media only screen and (max-width: 500px) {
   .footer-section .footer-left .list {
-    gap: 8px;
+    gap: 10px;
   }
   .footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after {
-    margin-left: 5px;
+    margin-left: 6px;
   }
 }
