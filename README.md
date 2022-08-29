@@ -6,14 +6,6 @@ Hi 👋 I am Shobhan Sundar Goutam. This project is made with the help of `HTML`
 
 ![badge](https://img.shields.io/badge/HTML-CSS-blue)
 
-### Screenshot
-
-![Project-9 Screenshot](./project-9.jpeg)
-
-### Mobile Layout :
-
-![Project-9 Mobile Screenshot](./project-9-mobile.jpg)
-
 - ### Learnings from this project:-
 
   - Learned to use `::placeholder` selector in css.
@@ -25,3 +17,7 @@ Hi 👋 I am Shobhan Sundar Goutam. This project is made with the help of `HTML`
 - It took around _9-10 hours_ to complete.
 
 - Live Link:- [Developer Landing Page](https://developer-fsjs9.netlify.app/)
+
+### Screenshot
+
+![Project-9 Screenshot](./project-9.jpeg)
