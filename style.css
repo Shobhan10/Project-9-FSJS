@@ -555,15 +555,24 @@ header div .header-image {
     gap: 40px;
   }
   .footer-section .footer-left .list {
-    gap: 10px;
+    gap: 25px;
   }
   .footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after {
-    margin-left: 6px;
+    margin-left: 15px;
   }
   .footer-right:first-child {
     text-align: left;
   }
   .footer-right .logos-list {
     padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-section .footer-left .list {
+    gap: 8px;
+  }
+  .footer-section .footer-left .list .list-items ~ .list-items:not(:last-of-type)::after {
+    margin-left: 5px;
   }
 }
